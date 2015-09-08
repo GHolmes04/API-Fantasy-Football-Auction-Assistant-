@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mflID: 1
+  roster_id: 
+  Roster: MyString
+
+two:
+  mflID: 1
+  roster_id: 
+  Roster: MyString
