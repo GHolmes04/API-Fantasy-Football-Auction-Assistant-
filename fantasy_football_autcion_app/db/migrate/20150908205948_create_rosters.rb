@@ -3,6 +3,7 @@ class CreateRosters < ActiveRecord::Migration
     create_table :rosters do |t|
       t.references :franchise, index: true, foreign_key: true
       t.references :league, index: true, foreign_key: true
+      t.references :player
 
 
 
