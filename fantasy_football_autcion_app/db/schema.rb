@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(version: 20150908205948) do
 
   create_table "leagues", force: :cascade do |t|
     t.integer  "mfl_id"
-    t.string   "name"
-    t.decimal  "salary_cap"
+    t.string   "name",                                 null: false
+    t.decimal  "salary_cap",   precision: 6, scale: 2
     t.integer  "roster_spots"
-    t.integer  "num_of_teams"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "num_of_teams",                         null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
   end
 
   create_table "rosters", force: :cascade do |t|
