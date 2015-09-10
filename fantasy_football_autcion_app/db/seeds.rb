@@ -28,7 +28,7 @@ League.create!(
   salary_cap: 200,
   roster_spots: 17,
   num_of_teams: 10)
-Franchise.create(
+Franchise.create!(
   user_id: 1,
   league_id: 1,
   name: 'Mobile Holmes')
