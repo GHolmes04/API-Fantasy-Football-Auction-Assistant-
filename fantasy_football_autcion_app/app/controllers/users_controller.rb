@@ -60,7 +60,6 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user.destroy
-
     head :no_content
   end
 
