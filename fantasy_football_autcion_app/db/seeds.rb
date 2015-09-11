@@ -16,6 +16,16 @@ User.create!(
   password_digest: 'jeff',
   token: 2)
 
+User.create!(
+  email: 'a@a.com',
+  password_digest: 'a',
+  token: 3)
+
+User.create!(
+  email: 'b@b.com',
+  password_digest: 'b',
+  token: 4)
+
 League.create!(
   mfl_id: 26152,
   name: 'cashin',
@@ -24,18 +34,26 @@ League.create!(
   num_of_teams: 10)
 League.create!(
   mfl_id: 'null',
-  name: 'Gawdi',
+  name: 'GA-Boston',
   salary_cap: 200,
-  roster_spots: 17,
-  num_of_teams: 10)
+  roster_spots: 4,
+  num_of_teams: 4)
 Franchise.create!(
   user_id: 1,
-  league_id: 1,
+  league_id: 2,
   name: 'Mobile Holmes')
 Franchise.create!(
   user_id: 2,
   league_id: 2,
   name: 'Jeff Hornets')
+Franchise.create!(
+  user_id: 3,
+  league_id: 2,
+  name: 'Cat Droppers')
+Franchise.create!(
+  user_id: 4,
+  league_id: 2,
+  name: 'GOAT')
 Player.create!(
   name: 'Antony Donovan')
 Roster.create!(
