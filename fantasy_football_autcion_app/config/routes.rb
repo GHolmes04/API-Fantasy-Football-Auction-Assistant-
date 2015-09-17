@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :leagues
   resources :players
   post '/login', to: 'users#login'
+  # get '/league_id'
 end
