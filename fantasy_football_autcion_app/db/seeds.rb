@@ -26,9 +26,21 @@ User.create!(
   password_digest: 'b',
   token: 4)
 
+User.create!(
+  email: 'joe@bags.com',
+  password_digest: 'c',
+  token: 5)
+
 League.create!(
   mfl_id: 26152,
   name: 'cashin',
+  salary_cap: 200,
+  roster_spots: 17,
+  num_of_teams: 10)
+
+League.create!(
+  mfl_id: 26152,
+  name: 'practice',
   salary_cap: 200,
   roster_spots: 17,
   num_of_teams: 10)

@@ -1,7 +1,7 @@
 class FranchisesController < ApplicationController
 
   def index
-    render json: Franchise.where(league_id: 2)
+    render json: Franchise.where(league_id: params[:league_id])
     # GET /franchises
     # Franchise.all
 

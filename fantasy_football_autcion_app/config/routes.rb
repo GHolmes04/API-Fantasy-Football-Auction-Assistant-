@@ -3,10 +3,12 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :users, except: [:new, :edit]
-  resources :franchises, except: [:destroy]
+  resources :franchises, except: [:destroy, :index]
   resources :rosters, except: [:destroy]
-  resources :leagues
+  resources :leagues do
+    resources :franchises, except: [:new, :edit, :destroy]
+  end
   resources :players
   post '/login', to: 'users#login'
-  # get '/league_id'
+  get '/leagues/:id/franchises', to: 'franchises#index'
 end
