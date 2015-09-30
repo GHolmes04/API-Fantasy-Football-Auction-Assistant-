@@ -1,7 +1,0 @@
-[WARNING] The model name 'Leagues' was recognized as a plural, using the singular 'League' instead. Override with --force-plural or setup custom inflection rules for this noun before running the generator.
-      invoke  active_record
-      create    db/migrate/20150908204826_create_leagues.rb
-      create    app/models/league.rb
-      invoke    test_unit
-      create      test/models/league_test.rb
-      create      test/fixtures/leagues.yml
